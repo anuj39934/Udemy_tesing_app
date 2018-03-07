@@ -7,14 +7,12 @@ import * as actions from '../actions';
 class Header extends Component {
 	debugger;
 	authButton() {
-		debugger;
 		if(this.props.authenticated){
 			return <button onClick = {() => this.props.authenticate(false)}>Sign Out</button>
 		}
 		return <button onClick = {() => this.props.authenticate(true)}>Sign In</button>;
 	}
 	render(){
-		debugger;
 		return (
 				<nav className = "navbar navbar-light">
 					<ul className = "nav navbar-nav">
